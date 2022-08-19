@@ -90,6 +90,20 @@ public class HiveManager {
         }
     }
 
+    public static Map<String, String> select() throws SQLException {
+        Map<String, String> res = new HashMap<>();
+        String sql = "select * from user_tb";
+        try (Connection connection = getConnection()) {
+            try (Statement statement = connection.createStatement();
+                 ResultSet resultSet = statement.executeQuery(sql)) {
+                while (resultSet.next()) {
+                    res.put(resultSet.getString("id"), resultSet.getString("name"));
+                }
+            }
+        }
+        return res;
+    }
+
     private static Connection getConnection() throws SQLException {
         return DriverManager.getConnection(URL, USER, PASSWORD);
     }

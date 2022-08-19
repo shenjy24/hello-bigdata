@@ -47,4 +47,11 @@ public class AppTest {
         String file = "D:\\java\\jackal-bigdata\\hive\\src\\main\\resources\\user.txt";
         HiveManager.loadData(file);
     }
+
+    @Test
+    @SneakyThrows
+    public void select() {
+        Map<String, String> info = HiveManager.select();
+        System.out.println(info);
+    }
 }
