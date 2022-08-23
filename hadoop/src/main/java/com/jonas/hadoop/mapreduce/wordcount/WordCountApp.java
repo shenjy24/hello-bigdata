@@ -1,4 +1,4 @@
-package com.jonas.hadoop.example.wordcount;
+package com.jonas.hadoop.mapreduce.wordcount;
 
 import com.jonas.tool.WordCountDataUtil;
 import org.apache.hadoop.conf.Configuration;
