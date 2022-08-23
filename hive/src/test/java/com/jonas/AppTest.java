@@ -1,5 +1,6 @@
 package com.jonas;
 
+import com.jonas.hive.HiveManager;
 import lombok.SneakyThrows;
 import org.junit.Test;
 

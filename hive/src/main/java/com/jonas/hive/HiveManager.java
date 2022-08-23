@@ -1,4 +1,4 @@
-package com.jonas;
+package com.jonas.hive;
 
 import java.sql.*;
 import java.util.ArrayList;

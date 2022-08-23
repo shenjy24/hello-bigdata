@@ -10,6 +10,7 @@
     <modules>
         <module>hive</module>
         <module>hadoop</module>
+        <module>tool</module>
     </modules>
     <!-- 所有带有子模块的项目的packaging都为pom -->
     <packaging>pom</packaging>
@@ -19,6 +20,16 @@
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.apache.hadoop</groupId>
+                <artifactId>hadoop-client</artifactId>
+                <version>3.3.4</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
     <dependencies>
         <dependency>
@@ -32,6 +43,11 @@
             <artifactId>junit</artifactId>
             <version>[4.13.1,)</version>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.12.0</version>
         </dependency>
     </dependencies>
 </project>
