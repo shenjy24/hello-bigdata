@@ -29,6 +29,11 @@
                 <artifactId>hadoop-client</artifactId>
                 <version>3.3.4</version>
             </dependency>
+            <dependency>
+                <groupId>org.glassfish</groupId>
+                <artifactId>javax.el</artifactId>
+                <version>3.0.1-b08</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
