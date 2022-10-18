@@ -12,6 +12,7 @@
         <module>hadoop</module>
         <module>tool</module>
         <module>hbase</module>
+        <module>flink</module>
     </modules>
     <!-- 所有带有子模块的项目的packaging都为pom -->
     <packaging>pom</packaging>
